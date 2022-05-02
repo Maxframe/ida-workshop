@@ -1,7 +1,24 @@
-#mydata {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#myData {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
-  height: 100%;  
+  width: auto;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.button {
+  margin: 1rem;
+  align-self: center;
+  width: auto;
+}
+
+.button img {
 }

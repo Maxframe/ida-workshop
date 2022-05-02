@@ -1,5 +1,5 @@
 // import data from json
-fetch('./data/niklas.json')
+fetch("./data/niklas.json")
   .then(function (response) {
     return response.json();
   })
@@ -7,21 +7,22 @@ fetch('./data/niklas.json')
     appendData(data);
   })
   .catch(function (err) {
-    console.log('error: ' + err);
+    console.log("error: " + err);
   });
 
 function appendData(data) {
   let mainContainer = document.getElementById("myData");
   data.forEach((obj) => {
-    console.log(obj.link)
-    console.log(obj.img)
+    // console.log(obj.link);
+    // console.log(obj.img);
     // create <a> tag
     let a = document.createElement("a");
-    a.href=obj.link;
-    
-    // create <img> inside
-    a.appendChild(document.createElement("img")).src = '/img/niklas/' + obj.img;
+    a.href = obj.link;
+    a.target = "_blank";
 
+    // create <img> inside
+    a.appendChild(document.createElement("img")).src = "/img/niklas/" + obj.img;
+    a.classList.add("button");
     mainContainer.appendChild(a);
   })
 }
