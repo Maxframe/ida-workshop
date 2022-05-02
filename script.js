@@ -22,6 +22,6 @@ function appendData(data) {
     // create <img> inside
     a.appendChild(document.createElement("img")).src = '/img/niklas/' + obj.img;
 
-    mainContainer.appendChild(alt);
+    mainContainer.appendChild(a);
   })
 }
