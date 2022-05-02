@@ -1,5 +1,5 @@
 // import data from json
-fetch("./data/niklas.json")
+fetch("./data/max.json")
   .then(function (response) {
     return response.json();
   })
@@ -9,20 +9,14 @@ fetch("./data/niklas.json")
   .catch(function (err) {
     console.log("error: " + err);
   });
-
+// create for every array element in the json this new HTML
 function appendData(data) {
   let mainContainer = document.getElementById("myData");
   data.forEach((obj) => {
-    // console.log(obj.link);
-    // console.log(obj.img);
-    // create <a> tag
-    let a = document.createElement("a");
-    a.href = obj.link;
-    a.target = "_blank";
-
-    // create <img> inside
-    a.appendChild(document.createElement("img")).src = "/img/niklas/" + obj.img;
-    a.classList.add("button");
-    mainContainer.appendChild(a);
-  })
+    var newElement = `
+      <a class="button" href="${obj.link}" target="_blank">
+        <img src="/img/max-redx/${obj.img}">
+      </a>`;
+    mainContainer.insertAdjacentHTML("beforeend", newElement);
+  });
 }
