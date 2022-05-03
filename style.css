@@ -22,6 +22,12 @@ li {
     max-width: 50%;
 }
 
+#wip {
+    color: white;
+    background-color: red;
+    padding: 0.2em 0.5em;
+}
+
 #menu {
     text-align: center;
     z-index: 999;
