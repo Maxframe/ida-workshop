@@ -23,5 +23,8 @@
   {"img": "zoom.png", "link": "https://hslu.zoom.us/j/66540274479?pwd=S1FmSTJ1Zi9VYmI2Y2VvMVNxZ2kvdz09#success"},
   {"img": "raiba-cookie.png", "link": "https://www.raiba-seenplatte.de/startseite.html"},
   {"img": "raiba-close.png", "link": "https://www.raiba-seenplatte.de/services_cloud/portal/m/banking_start"},
-  {"img": "bulkresize.png", "link": "https://bulkresizephotos.com/en"}
+  {"img": "bulkresize.png", "link": "https://bulkresizephotos.com/en"},
+  {"img": "daybridge.png", "link": "https://daybridge.com/"},
+  {"img": "replit.png", "link": "https://replit.com/"},
+  {"img": "gitlab.png", "link": "https://gitlab.com/-/trial_registrations/new?glm_source=about.gitlab.com&glm_content=default-saas-trial"}
 ]
