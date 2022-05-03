@@ -5,6 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
 }
 
 h1 {
@@ -12,19 +13,19 @@ h1 {
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 li {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 0.5em 0;
     font-style: italic;
-    max-width: 50%;
+    max-width: 90%;
 }
 
 #wip {
     color: white;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     padding: 0.2em 0.5em;
 }
 
@@ -56,6 +57,12 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50%;
+}
+
+.horizon-container {
+    scroll-snap-align: center;
 }
 
 .container {
@@ -70,8 +77,7 @@ li {
 }
 
 #text-descript {
-    width: 60%;
-    height: 80%;
+    width: clamp(40%, 8rem, 60%);
 }
 
 #description {
