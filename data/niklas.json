@@ -26,5 +26,10 @@
   {"img": "bulkresize.png", "link": "https://bulkresizephotos.com/en"},
   {"img": "daybridge.png", "link": "https://daybridge.com/"},
   {"img": "replit.png", "link": "https://replit.com/"},
-  {"img": "gitlab.png", "link": "https://gitlab.com/-/trial_registrations/new?glm_source=about.gitlab.com&glm_content=default-saas-trial"}
+  {"img": "gitlab.png", "link": "https://gitlab.com/-/trial_registrations/new?glm_source=about.gitlab.com&glm_content=default-saas-trial"},
+  {"img": "aws.png", "link": "https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct&src=header_signup"},
+  {"img": "adobe.png", "link": "https://acrobat.adobe.com/link/home/"},
+  {"img": "deejay.png", "link": "https://www.deejay.de/m_Info/sm_Cart"},
+  {"img": "yallo.png", "link": "https://www.yallo.ch/eshop/new-postpaid/checkout/yallo_swiss_flat_5g?promotions=yalloswissflat5g431200and24with(out)"},
+  {"img": "googlemaps.png", "link": "https://www.google.de/maps/"}
 ]
