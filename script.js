@@ -25,38 +25,48 @@ files.forEach((name) => {
 })
 
 // nav highlight
-window.addEventListener("scroll", (event) => {
-  let scrollX = this.scrollX;
-  let windowWidth = window.innerWidth;
+let menuDesc = document.getElementById('menu-desc');
+let menuMax = document.getElementById('menu-max');
+let menuNiklas = document.getElementById('menu-niklas');
+let menuRuben = document.getElementById('menu-ruben')
+let windowWidth = window.innerWidth;
 
-  if (scrollX < 0.5*windowWidth) {
+let main = document.getElementsByTagName("main")[0];
+main.addEventListener("scroll", (event) => {
+  let scrollLeft = main.scrollLeft;
+
+  if (scrollLeft < 0.5*windowWidth) {
     // add the class
-    document.getElementById('menu-desc').classList.add('highlight');
+    menuDesc.classList.add('highlight');
     // removing the class
-    document.getElementById('menu-max').classList.remove('highlight')
-    document.getElementById('menu-niklas').classList.remove('highlight')
-    document.getElementById('menu-ruben').classList.remove('highlight')
-  } else if (scrollX < 1.5*windowWidth) {
+    menuMax.classList.remove('highlight')
+    menuNiklas.classList.remove('highlight')
+    menuRuben.classList.remove('highlight')
+  } else if (scrollLeft < 1.5*windowWidth) {
     // add the class
-    document.getElementById('menu-max').classList.add('highlight');
+    menuMax.classList.add('highlight');
     // removing the class
-    document.getElementById('menu-desc').classList.remove('highlight')
-    document.getElementById('menu-niklas').classList.remove('highlight')
-    document.getElementById('menu-ruben').classList.remove('highlight')
-  } else if (scrollX < 2.5*windowWidth) {
+    menuDesc.classList.remove('highlight')
+    menuNiklas.classList.remove('highlight')
+    menuRuben.classList.remove('highlight')
+  } else if (scrollLeft < 2.5*windowWidth) {
     // add the class
-    document.getElementById('menu-niklas').classList.add('highlight');
+    menuNiklas.classList.add('highlight');
     // removing the class
-    document.getElementById('menu-max').classList.remove('highlight')
-    document.getElementById('menu-desc').classList.remove('highlight')
-    document.getElementById('menu-ruben').classList.remove('highlight')
+    menuMax.classList.remove('highlight')
+    menuDesc.classList.remove('highlight')
+    menuRuben.classList.remove('highlight')
   } else {
     // add the class
-    document.getElementById('menu-ruben').classList.add('highlight');
+    menuRuben.classList.add('highlight');
     // removing the class
-    document.getElementById('menu-max').classList.remove('highlight')
-    document.getElementById('menu-niklas').classList.remove('highlight')
-    document.getElementById('menu-desc').classList.remove('highlight')
+    menuMax.classList.remove('highlight')
+    menuNiklas.classList.remove('highlight')
+    menuDesc.classList.remove('highlight')
   }
-  console.log(scrollX);
 });
+
+menuDesc.addEventListener("click", function () {main.scrollTo(0, 0)} );
+menuMax.addEventListener("click", function () {main.scrollTo(windowWidth, 0)} );
+menuNiklas.addEventListener("click", function () {main.scrollTo(2*windowWidth, 0)} );
+menuRuben.addEventListener("click", function () {main.scrollTo(3*windowWidth, 0)} );

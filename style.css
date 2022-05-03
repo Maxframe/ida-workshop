@@ -2,19 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-a {
   color: #000;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #fff;
-  overflow-y: hidden;
-  width: 400vw;
-  height: 100vh;
-  font-family: Helvetica, Geneva, Tahoma, sans-serif;
-  line-height: 1.4;
+    background-color: #fff;
+    overflow: hidden;
+    height: 100vh;
+    font-family: Helvetica, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
 }
 
 h1 {
@@ -49,7 +46,7 @@ li {
 #menu {
   text-align: center;
   z-index: 999;
-  position: fixed;
+  position: absolute;
   width: 100vh;
   top: 100vh;
   left: 0;
@@ -70,31 +67,31 @@ li {
   transform: translateX(-50%);
 }
 
-#menu a {
+#menu div {
   text-decoration: none;
   /* color: #000; */
   margin: 2em;
   display: inline-block;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 main {
-  display: flex;
-  scroll-snap-type: x mandatory;
-  scroll-snap-points-x: repeat(100vh);
-  -webkit-overflow-scrolling: touch;
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
 }
 
 section {
-  min-width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
+    min-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
 }
 
 .container {
