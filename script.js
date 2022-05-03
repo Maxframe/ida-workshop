@@ -70,3 +70,8 @@ menuDesc.addEventListener("click", function () {main.scrollTo(0, 0)} );
 menuMax.addEventListener("click", function () {main.scrollTo(windowWidth, 0)} );
 menuNiklas.addEventListener("click", function () {main.scrollTo(2*windowWidth, 0)} );
 menuRuben.addEventListener("click", function () {main.scrollTo(3*windowWidth, 0)} );
+
+main.addEventListener("wheel", (event) => {
+  event.preventDefault();
+  main.scrollBy(event.deltaY, 0);
+});
