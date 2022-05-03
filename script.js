@@ -31,32 +31,32 @@ window.addEventListener("scroll", (event) => {
 
   if (scrollX < windowWidth) {
     // add the class
-    document.getElementById('menu-desc').classList.add('active');
+    document.getElementById('menu-desc').classList.add('highlight');
     // removing the class
-    document.getElementById('menu-max').classList.remove('active')
-    document.getElementById('menu-niklas').classList.remove('active')
-    document.getElementById('menu-ruben').classList.remove('active')
+    document.getElementById('menu-max').classList.remove('highlight')
+    document.getElementById('menu-niklas').classList.remove('highlight')
+    document.getElementById('menu-ruben').classList.remove('highlight')
   } else if (scrollX < 2*windowWidth) {
     // add the class
-    document.getElementById('menu-max').classList.add('active');
+    document.getElementById('menu-max').classList.add('highlight');
     // removing the class
-    document.getElementById('menu-desc').classList.remove('active')
-    document.getElementById('menu-niklas').classList.remove('active')
-    document.getElementById('menu-ruben').classList.remove('active')
+    document.getElementById('menu-desc').classList.remove('highlight')
+    document.getElementById('menu-niklas').classList.remove('highlight')
+    document.getElementById('menu-ruben').classList.remove('highlight')
   } else if (scrollX < 3*windowWidth) {
     // add the class
-    document.getElementById('menu-niklas').classList.add('active');
+    document.getElementById('menu-niklas').classList.add('highlight');
     // removing the class
-    document.getElementById('menu-max').classList.remove('active')
-    document.getElementById('menu-desc').classList.remove('active')
-    document.getElementById('menu-ruben').classList.remove('active')
+    document.getElementById('menu-max').classList.remove('highlight')
+    document.getElementById('menu-desc').classList.remove('highlight')
+    document.getElementById('menu-ruben').classList.remove('highlight')
   } else {
     // add the class
-    document.getElementById('menu-ruben').classList.add('active');
+    document.getElementById('menu-ruben').classList.add('highlight');
     // removing the class
-    document.getElementById('menu-max').classList.remove('active')
-    document.getElementById('menu-niklas').classList.remove('active')
-    document.getElementById('menu-desc').classList.remove('active')
+    document.getElementById('menu-max').classList.remove('highlight')
+    document.getElementById('menu-niklas').classList.remove('highlight')
+    document.getElementById('menu-desc').classList.remove('highlight')
   }
   console.log(scrollX);
 });

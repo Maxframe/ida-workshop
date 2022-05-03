@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+a {
+  color: #000;
+}
+
 body {
     background-color: #fff;
     overflow-y: hidden;
@@ -32,10 +36,10 @@ li {
     max-width: 90%;
 }
 
-#active {
-    color: white;
-    background-color: rgb(0, 0, 0);
-    padding: 0.2em 0.5em;
+.highlight {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 0.2em 0.5em;
 }
 
 #menu {
@@ -64,7 +68,7 @@ li {
 
 #menu a {
     text-decoration: none;
-    color: #000;
+    /* color: #000; */
     margin: 2em;
     display: inline-block;
     text-transform: uppercase;
