@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -9,31 +9,35 @@ a {
 }
 
 body {
-    background-color: #fff;
-    overflow-y: hidden;
-    width: 400vw;
-    height: 100vh;
-    font-family: Helvetica, Geneva, Tahoma, sans-serif;
-    line-height: 1.4;
+  background-color: #fff;
+  overflow-y: hidden;
+  width: 400vw;
+  height: 100vh;
+  font-family: Helvetica, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
 }
 
 h1 {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    margin-block-end: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-block-end: 1em;
 }
 
 p {
-    font-size: 0.9em;
-    margin-block-end: 1em;
+  font-size: 0.9em;
+  margin-block-end: 1em;
+}
+
+ul {
+  margin-top: -1rem;
 }
 
 li {
-    font-size: 0.9em;
-    margin: 0.5em 0;
-    font-style: italic;
-    max-width: 90%;
+  font-size: 0.9em;
+  font-style: italic;
+  max-width: 90%;
+  margin-left: 1em;
 }
 
 .highlight {
@@ -43,100 +47,100 @@ li {
 }
 
 #menu {
-    text-align: center;
-    z-index: 999;
-    position: fixed;
-    width: 100vh;
-    top: 100vh;
-    left: 0;
-    background-color: #fff;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
+  text-align: center;
+  z-index: 999;
+  position: fixed;
+  width: 100vh;
+  top: 100vh;
+  left: 0;
+  background-color: #fff;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
 }
 
 #menu::after {
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 1px;
-    background-color: #000;
-    bottom: -100vh;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background-color: #000;
+  bottom: -100vh;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #menu a {
-    text-decoration: none;
-    /* color: #000; */
-    margin: 2em;
-    display: inline-block;
-    text-transform: uppercase;
+  text-decoration: none;
+  /* color: #000; */
+  margin: 2em;
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 main {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-snap-points-x: repeat(100vh);
-    -webkit-overflow-scrolling: touch;
-    height: 100vh;
-    overflow-y: hidden;
-    overflow-x: scroll;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-snap-points-x: repeat(100vh);
+  -webkit-overflow-scrolling: touch;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 section {
-    min-width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  width: 60%;
 }
 
 #text-descript {
-    width: clamp(40%, 8rem, 60%);
+  width: clamp(40%, 8rem, 60%);
 }
 
 #description {
-    background-color: #fff;
-    bottom: 0;
+  background-color: #fff;
+  bottom: 0;
 }
 
 #max {
-    bottom: 0;
-    /*   background-color: aliceblue;
+  bottom: 0;
+  /*   background-color: aliceblue;
  */
 }
 
 #niklas {
-    bottom: 0;
-    /*   background-color: gold;
+  bottom: 0;
+  /*   background-color: gold;
  */
 }
 
 #ruben {
-    bottom: 0;
-    /*   background-color: rosybrown;
+  bottom: 0;
+  /*   background-color: rosybrown;
  */
 }
 
 .button img {
-    /*   filter: grayscale(1);
+  /*   filter: grayscale(1);
  */
-    transform: translateY(0);
-    transition: ease-out 0.1s;
+  transform: translateY(0);
+  transition: ease-out 0.1s;
 }
 
-.button:hover>img {
-    transform: translateY(-3px);
+.button:hover > img {
+  transform: translateY(-3px);
 }
