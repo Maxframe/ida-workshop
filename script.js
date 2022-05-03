@@ -29,21 +29,21 @@ window.addEventListener("scroll", (event) => {
   let scrollX = this.scrollX;
   let windowWidth = window.innerWidth;
 
-  if (scrollX < windowWidth) {
+  if (scrollX < 0.5*windowWidth) {
     // add the class
     document.getElementById('menu-desc').classList.add('highlight');
     // removing the class
     document.getElementById('menu-max').classList.remove('highlight')
     document.getElementById('menu-niklas').classList.remove('highlight')
     document.getElementById('menu-ruben').classList.remove('highlight')
-  } else if (scrollX < 2*windowWidth) {
+  } else if (scrollX < 1.5*windowWidth) {
     // add the class
     document.getElementById('menu-max').classList.add('highlight');
     // removing the class
     document.getElementById('menu-desc').classList.remove('highlight')
     document.getElementById('menu-niklas').classList.remove('highlight')
     document.getElementById('menu-ruben').classList.remove('highlight')
-  } else if (scrollX < 3*windowWidth) {
+  } else if (scrollX < 2.5*windowWidth) {
     // add the class
     document.getElementById('menu-niklas').classList.add('highlight');
     // removing the class
