@@ -1,6 +1,48 @@
+body {
+    background-color: #fff;
+    overflow: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu {
+    z-index: 999;
+    position: fixed;
+    top: 30px;
+}
+#menu a {
+    margin: 0.5em 0;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.horizon-block {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+#description {
+    bottom: 0;
+    left: 0;
+}
+#max {
+    bottom: 0;
+    left: 100vw;
+}
+#niklas {
+    bottom: 0;
+    left: 200vw;
+}
+#ruben {
+    bottom: 0;
+    left: 300vw;
+}
+
 * {
   margin: 0;
-  padding: 0;
+  padding: 400vw;
 }
 
 #myData {
