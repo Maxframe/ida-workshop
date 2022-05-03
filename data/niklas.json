@@ -31,5 +31,6 @@
   {"img": "adobe.png", "link": "https://acrobat.adobe.com/link/home/"},
   {"img": "deejay.png", "link": "https://www.deejay.de/m_Info/sm_Cart"},
   {"img": "yallo.png", "link": "https://www.yallo.ch/eshop/new-postpaid/checkout/yallo_swiss_flat_5g?promotions=yalloswissflat5g431200and24with(out)"},
-  {"img": "googlemaps.png", "link": "https://www.google.de/maps/"}
+  {"img": "googlemaps.png", "link": "https://www.google.de/maps/"},
+  {"img": "amazon.png", "link": "https://www.amazon.de/gp/cart/view.html?ref_=nav_cart"}
 ]
