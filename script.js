@@ -23,3 +23,40 @@ files.forEach((name) => {
     });
   }
 })
+
+// nav highlight
+window.addEventListener("scroll", (event) => {
+  let scrollX = this.scrollX;
+  let windowWidth = window.innerWidth;
+
+  if (scrollX < windowWidth) {
+    // add the class
+    document.getElementById('menu-desc').classList.add('active');
+    // removing the class
+    document.getElementById('menu-max').classList.remove('active')
+    document.getElementById('menu-niklas').classList.remove('active')
+    document.getElementById('menu-ruben').classList.remove('active')
+  } else if (scrollX < 2*windowWidth) {
+    // add the class
+    document.getElementById('menu-max').classList.add('active');
+    // removing the class
+    document.getElementById('menu-desc').classList.remove('active')
+    document.getElementById('menu-niklas').classList.remove('active')
+    document.getElementById('menu-ruben').classList.remove('active')
+  } else if (scrollX < 3*windowWidth) {
+    // add the class
+    document.getElementById('menu-niklas').classList.add('active');
+    // removing the class
+    document.getElementById('menu-max').classList.remove('active')
+    document.getElementById('menu-desc').classList.remove('active')
+    document.getElementById('menu-ruben').classList.remove('active')
+  } else {
+    // add the class
+    document.getElementById('menu-ruben').classList.add('active');
+    // removing the class
+    document.getElementById('menu-max').classList.remove('active')
+    document.getElementById('menu-niklas').classList.remove('active')
+    document.getElementById('menu-desc').classList.remove('active')
+  }
+  console.log(scrollX);
+});

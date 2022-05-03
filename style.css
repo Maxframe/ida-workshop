@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #fff;
   overflow-y: hidden;
   width: 400vw;
   height: 100vh;
-  margin: 0;
   font-family: Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
@@ -23,7 +28,7 @@ li {
   max-width: 90%;
 }
 
-#wip {
+#active {
   color: white;
   background-color: rgb(0, 0, 0);
   padding: 0.2em 0.5em;
@@ -62,15 +67,15 @@ li {
 }
 
 .horizon-container {
-  scroll-snap-type: x mandatory;  
   display: flex;
+  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
   overflow-x: scroll;
 }
 
 .horizon-block {
-  position: relative;
-  width: 100vw;
+  min-width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -99,19 +104,29 @@ li {
 
 #max {
   bottom: 0;
-  background-color: aliceblue;
-}
+/*   background-color: aliceblue;
+ */}
 
 #niklas {
   bottom: 0;
-  background-color: gold;
-}
+/*   background-color: gold;
+ */}
 
 #ruben {
   bottom: 0;
-  background-color: rosybrown;
+/*   background-color: rosybrown;
+ */}
+
+.button img {
+/*   filter: grayscale(1);
+ */  
+ transform: translateY(0);
+ transition: ease-out 0.1s;
 }
 
-/* .button img {
-  transform: scale(0.5);
-} */
+.button:hover > img {
+  transform: translateY(-3px);
+}
+
+
+
