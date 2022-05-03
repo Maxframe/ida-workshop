@@ -74,7 +74,7 @@ li {
     text-transform: uppercase;
 }
 
-.horizon-container {
+main {
     display: flex;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -82,7 +82,7 @@ li {
     overflow-x: scroll;
 }
 
-.horizon-block {
+section {
     min-width: 100vw;
     height: 100vh;
     display: flex;
