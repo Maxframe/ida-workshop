@@ -8,6 +8,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+#menu {
+    z-index: 999;
+    position: fixed;
+    top: 30px;
+}
+#menu a {
+    margin: 0.5em 0;
+    display: inline-block;
+    text-transform: uppercase;
+}
 .horizon-block {
     position: absolute;
     width: 100vw;
