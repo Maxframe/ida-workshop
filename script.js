@@ -24,7 +24,6 @@ files.forEach((name) => {
   }
 })
 
-// nav highlight
 let menuDesc = document.getElementById('menu-desc');
 let menuMax = document.getElementById('menu-max');
 let menuNiklas = document.getElementById('menu-niklas');
@@ -36,30 +35,22 @@ main.addEventListener("scroll", (event) => {
   let scrollLeft = main.scrollLeft;
 
   if (scrollLeft < 0.5*windowWidth) {
-    // add the class
     menuDesc.classList.add('highlight');
-    // removing the class
     menuMax.classList.remove('highlight')
     menuNiklas.classList.remove('highlight')
     menuRuben.classList.remove('highlight')
   } else if (scrollLeft < 1.5*windowWidth) {
-    // add the class
     menuMax.classList.add('highlight');
-    // removing the class
     menuDesc.classList.remove('highlight')
     menuNiklas.classList.remove('highlight')
     menuRuben.classList.remove('highlight')
   } else if (scrollLeft < 2.5*windowWidth) {
-    // add the class
     menuNiklas.classList.add('highlight');
-    // removing the class
     menuMax.classList.remove('highlight')
     menuDesc.classList.remove('highlight')
     menuRuben.classList.remove('highlight')
   } else {
-    // add the class
     menuRuben.classList.add('highlight');
-    // removing the class
     menuMax.classList.remove('highlight')
     menuNiklas.classList.remove('highlight')
     menuDesc.classList.remove('highlight')

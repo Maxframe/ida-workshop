@@ -69,7 +69,6 @@ li {
 
 #menu div {
   text-decoration: none;
-  /* color: #000; */
   margin: 2em;
   display: inline-block;
   text-transform: uppercase;
@@ -112,27 +111,7 @@ section {
   bottom: 0;
 }
 
-#max {
-  bottom: 0;
-  /*   background-color: aliceblue;
- */
-}
-
-#niklas {
-  bottom: 0;
-  /*   background-color: gold;
- */
-}
-
-#ruben {
-  bottom: 0;
-  /*   background-color: rosybrown;
- */
-}
-
 .button img {
-  /*   filter: grayscale(1);
- */
   transform: translateY(0);
   transition: ease-out 0.1s;
 }
