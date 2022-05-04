@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #000;
+  color: rgba(0, 0, 0, 0.9);
   scroll-behavior: smooth;
 }
 
@@ -16,14 +16,23 @@ body {
 
 h1 {
   font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  margin-block-end: 1em;
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+h2 {
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-block-end: 2em;
+  color: #959595;
 }
 
 p {
   font-size: 0.9em;
+  line-height: 1.4em;
   margin-block-end: 1em;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 ul {
@@ -39,7 +48,7 @@ li {
 
 .highlight {
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 0.2em 0.5em;
 }
 
@@ -60,7 +69,7 @@ li {
   position: absolute;
   width: 80%;
   height: 1px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
   bottom: -100vh;
   bottom: 0;
   left: 50%;
@@ -97,7 +106,7 @@ section {
   flex-wrap: wrap;
   gap: 0.25rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   background: white;
   width: 60%;
 }
