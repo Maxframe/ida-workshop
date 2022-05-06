@@ -64,5 +64,9 @@ menuRuben.addEventListener("click", function () {main.scrollTo(3*windowWidth, 0)
 
 main.addEventListener("wheel", (event) => {
   event.preventDefault();
-  main.scrollBy(event.deltaY, 0);
+  if (event.deltaY > 0) {
+    main.scrollBy(windowWidth, 0);
+  } else if (event.deltaY < 0) {
+    main.scrollBy(-windowWidth, 0);
+  }
 });
